@@ -14,6 +14,7 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
 }
+
 .inactive{
     display: none;
 }
@@ -102,6 +103,15 @@ nav img {
     .navbar-email {
         display: none;
     }
+    .desktop-menu{
+        display: none;
+    }
+
+}
+@media (min-width:641px){
+    .mobile-menu{
+        display: none;
+    }
 }
 .desktop-menu {
     position: absolute;
@@ -143,4 +153,41 @@ nav img {
     margin-bottom: 20px;
     display: inline-block;
 
+}
+/*Menu en mobile*/
+.mobile-menu{
+    position: absolute;
+    top: 60px;
+    padding: 24px;
+}
+.mobile-menu a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    
+}
+.mobile-menu ul {
+    padding: 0;
+    margin-top: 24px 0 0;
+    list-style: none;
+}
+.mobile-menu ul li {
+   margin-bottom: 24px; 
+}
+.email{
+    font-size: var(--sm);
+    font-weight: 300 !important;
+    color:  var(--rojo-claro);
+}
+.mobile-menu ul:nth-child(1) {
+    border-bottom: 1px solid var(--rojo-claro)
+   
+}
+.sign-out{
+    color:var(--rojo-claro)!important;
+    font-size: var(--sm);
+
+}
+.mobile-menu ul:nth-child(3) {
+    margin-top: 150px;
 }
