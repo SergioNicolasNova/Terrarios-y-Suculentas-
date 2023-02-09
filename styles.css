@@ -106,7 +106,7 @@ nav img {
     .desktop-menu{
         display: none;
     }
-    .produc-detail{
+    aside{
         width: 100%;
     }
     .cards-container{
@@ -175,9 +175,13 @@ nav img {
 }
 /*Menu en mobile*/
 .mobile-menu{
+    background: var(--naranja-claro);
     position: absolute;
     top: 60px;
     padding: 24px;
+    left:0;
+    width: 100%;
+    
 }
 .mobile-menu a{
     text-decoration: none;
@@ -211,7 +215,7 @@ nav img {
     margin-top: 150px;
 }
 /* despliegue del carrito */
-.produc-detail{
+aside{
     background: var(--amarillo-claro);
     width: 360px;                     
     padding: 0px 24px;
@@ -461,5 +465,93 @@ height: 40px;
     margin-bottom: 0px;
     color: var(--rojo-claro);
   }
+  /*detalles del producto */
+.producDetail{
+    width: 360px;                     
+    padding-bottom: 24px;
+    position: absolute;
+    right: 0;
+    
+    
+}
+.produc-detail-close > img:nth-child(1):hover{
+  cursor: pointer;
+
+}
+.produc-detail-close {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 14px;
+  left: 14px;
+  background: #D7E9B9;
+  border-radius: 50%;
+  padding: 5px;
+  
+}
+
+
+.primary-button{
+background-color: var(--verde-clarito);
+border-radius: 8px;
+border:none;
+cursor: pointer;
+font-size: var(--sm);
+font-weight:bold ;
+width: 200px;
+height: 40px;            
+}
+.add-to-cart-button{
+  display: flex;  
+  align-items: center;
+  justify-content: center;
+}
+.img-product{
+    height: 360px;
+    width: 360px;
+    object-fit: cover;
+    border-radius: 0 0 20px 20px;
+}
+.add-to-cart{
+    height: 20px;
+    width: 20px;
+    object-fit: cover; 
+}
+.close{
+    height: 20px;
+    width: 20px;
+    object-fit: cover;
+
+}
+.detailInfo{
+    margin: 24px 24px 0 24px;   
+}
+.detailInfo p:nth-child(1){
+    font-weight: bold;
+    font-size: var(--md);
+    margin-top: 0;
+    margin-bottom: 4px; 
+}
+.detailInfo p:nth-child(2){
+    color: black;
+    font-weight: bold;
+    font-size: var(--md);
+    margin-top: 0;
+    margin-bottom: 36px; 
+}
+.detailInfo p:nth-child(3){
+    color: var(--rojo-claro);
+    Font-size: var(--SM);
+    margin-top: 0;
+    margin-bottom: 36px; 
+}
+@media (max-width: 640px){
+    .producDetail{
+        width: 100%;
+    }
+}
+    
+
+
 
 
